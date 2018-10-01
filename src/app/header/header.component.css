@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 5px solid rgb(105, 105, 105);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header__icon {
+  padding-right: 2rem;
+  font-size: 3rem;
+  color: rgb(105, 105, 105);
+}
+
+.header__title {
+  font-size: 1.5rem;
+}
+
+.header__user {
+  padding-right: 2rem;
+}
+
+.header__button {
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid rgb(180, 180, 180);
+}
