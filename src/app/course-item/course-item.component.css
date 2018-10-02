@@ -6,7 +6,7 @@
 
 .container {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .container__search {
@@ -25,6 +25,11 @@
   border: 1px solid rgb(180, 180, 180);
 }
 
+.search__button:hover {
+  background-color: rgb(200, 200, 200);
+  color: rgb(85, 107, 47);
+}
+
 .add__container {
   display: flex;
   justify-content: space-between;
@@ -40,7 +45,8 @@
   border-radius: 5px;
   padding: 0.3rem 0.5rem;
   border: 1px solid rgb(180, 180, 180);
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(200, 200, 200);
+  color: rgb(85, 107, 47);
 }
 
 .add__button {
@@ -54,4 +60,118 @@
 .add__icon {
   font-size: 0.7rem;
   padding-right: 2rem;
+  color: rgb(85, 107, 47);
 }
+
+.course {
+  margin: 1rem;
+  border: 1px solid rgb(85, 107, 47);
+  border-radius: 3px;
+}
+
+.course__container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course__data {
+
+}
+
+.course__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course__info__title {
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+}
+
+.course__info__time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+}
+
+.course__time {
+  padding-right: 2rem;
+}
+
+.course__date {
+  padding-right: 5rem;
+}
+
+.course__about {
+  padding-right: 2rem;
+}
+
+.course__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.button__edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid rgb(180, 180, 180);
+}
+
+.button__edit:hover {
+  background-color: rgb(200, 200, 200);
+  color: rgb(85, 107, 47);
+}
+
+.edit__icon {
+  color: rgb(85, 107, 47);
+}
+
+.edit_icon__title {
+
+}
+
+.button__delete {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid rgb(180, 180, 180);
+}
+
+.button__delete:hover {
+  background-color: rgb(200, 200, 200);
+  color: rgb(85, 107, 47);
+}
+
+.delete__icon {
+  color: rgb(85, 107, 47);
+}
+
+.load__courses {
+  margin: 1rem;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(221,221,221);
+}
+
+.load__button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.load__courses:hover {
+  background-color: rgb(200, 200, 200);
+  color: rgb(85, 107, 47);
+}
+
