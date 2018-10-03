@@ -26,8 +26,7 @@
 }
 
 .search__button:hover {
-  background-color: rgb(200, 200, 200);
-  color: rgb(85, 107, 47);
+
 }
 
 .add__container {
@@ -36,17 +35,19 @@
   align-items: center;
   font-size: 100%;
   font-family: inherit;
+  border-radius: 5px;
   padding: 0.3rem 0.5rem;
-  border: 1px solid transparent;
-  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .add__container:hover {
   border-radius: 5px;
   padding: 0.3rem 0.5rem;
-  border: 1px solid rgb(180, 180, 180);
-  background-color: rgb(200, 200, 200);
-  color: rgb(85, 107, 47);
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .add__button {
@@ -59,8 +60,8 @@
 
 .add__icon {
   font-size: 0.7rem;
-  padding-right: 2rem;
-  color: rgb(85, 107, 47);
+  margin-right: 2rem;
+  color: rgb(0, 0, 0);
 }
 
 .course {
@@ -76,7 +77,7 @@
 }
 
 .course__data {
-
+  margin-right: 3rem;
 }
 
 .course__info {
@@ -103,35 +104,31 @@
 }
 
 .course__date {
-  padding-right: 5rem;
+
 }
 
 .course__about {
-  padding-right: 2rem;
+
 }
 
 .course__buttons {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
+  min-width: 7rem;
 }
 
 .button__edit {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 1rem;
-  border-radius: 5px;
-  padding: 0.3rem 0.5rem;
-  border: 1px solid rgb(180, 180, 180);
+  text-align: left;
 }
 
 .button__edit:hover {
-  background-color: rgb(200, 200, 200);
-  color: rgb(85, 107, 47);
+
 }
 
 .edit__icon {
-  color: rgb(85, 107, 47);
+
 }
 
 .edit_icon__title {
@@ -139,20 +136,15 @@
 }
 
 .button__delete {
-  display: flex;
-  justify-content: space-between;
-  border-radius: 5px;
-  padding: 0.3rem 0.5rem;
-  border: 1px solid rgb(180, 180, 180);
+  text-align: left;
 }
 
 .button__delete:hover {
-  background-color: rgb(200, 200, 200);
-  color: rgb(85, 107, 47);
+
 }
 
 .delete__icon {
-  color: rgb(85, 107, 47);
+
 }
 
 .load__courses {
@@ -162,7 +154,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(221,221,221);
+  background-color: rgb(221, 221, 221);
 }
 
 .load__button {
@@ -175,3 +167,18 @@
   color: rgb(85, 107, 47);
 }
 
+.course__button {
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid rgb(180, 180, 180);
+}
+
+.icons {
+  color: rgb(85, 107, 47);
+  margin-right: 1rem;
+}
+
+.course__button:hover {
+  background-color: rgb(200, 200, 200);
+  color: rgb(85, 107, 47);
+}
