@@ -1,7 +1,7 @@
 import {CourseItem} from './course/course.interface';
 import {Course} from './course/course';
 
-export const COURSES: CourseItem[] = [
+export const COURSES: Course[] = [
   {id: 1, title: 'Intro', date: '06/15/2018', duration: '1h 15min',
     description: 'How to build your first Hello World Angular application'},
   {id: 2, title: 'Components', date: '06/20/2018', duration: '1h 5min',

@@ -9,6 +9,7 @@ import { CoursesPageComponent } from './courses-page/courses-page.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { CoursesPageModule } from './courses-page/courses-page.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [

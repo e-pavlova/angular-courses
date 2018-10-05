@@ -3,10 +3,10 @@
 <div class="search">
   <div class="container">
     <div class="container__search">
-      <input type="text" placeholder="Name, fragment or date" class="search__input">
+      <input type="text" placeholder="Name, fragment or date" class="search__input" >
     </div>
     <div>
-      <input type="button" value="Search" class="search__button course__button">
+      <input type="button" value="Search" class="search__button course__button"> <!--(click)="showInputMessage()"-->
     </div>
   </div>
   <button class="add__container">
@@ -19,7 +19,9 @@
 
 <!--courses-page section-->
 
-<app-course></app-course>
+<ng-container *ngFor="let course of courses">
+  <app-course [course]="course"></app-course>
+</ng-container>
 
 <!--load more section-->
 
