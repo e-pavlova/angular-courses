@@ -1,10 +1,10 @@
-import { CoursesModule } from './courses.module';
+import { CoursesPageModule } from './courses-page.module';
 
-describe('CoursesModule', () => {
-  let coursesModule: CoursesModule;
+describe('CoursesPageModule', () => {
+  let coursesModule: CoursesPageModule;
 
   beforeEach(() => {
-    coursesModule = new CoursesModule();
+    coursesModule = new CoursesPageModule();
   });
 
   it('should create an instance', () => {

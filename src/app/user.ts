@@ -1,6 +1,6 @@
 import { UserItem } from './user.interface';
 
-class User implements UserItem {
+export class User implements UserItem {
   id: number;
   firstName: string;
   lastName: string;

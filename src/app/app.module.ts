@@ -5,10 +5,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
-import { CoursesComponent } from './courses/courses.component';
+import { CoursesPageComponent } from './courses-page/courses-page.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
-import { CoursesModule } from './courses/courses.module';
+import { CoursesPageModule } from './courses-page/courses-page.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { CoursesModule } from './courses/courses.module';
     BrowserModule,
     CoreModule,
     SharedModule,
-    CoursesModule
+    CoursesPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
