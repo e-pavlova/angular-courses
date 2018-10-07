@@ -15,6 +15,10 @@ export class CoursesPageComponent implements OnInit {
     console.log(this.search);
   }
 
+  showLoadMore() {
+    console.log('Load More');
+  }
+
   constructor() {
   }
 
