@@ -1,6 +1,6 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { COURSES } from './mock-courses';
-import {Course} from './course/course';
+import { Course } from './course/course';
 
 @Component({
   selector: 'app-courses-page',
@@ -9,8 +9,14 @@ import {Course} from './course/course';
 })
 export class CoursesPageComponent implements OnInit {
   public courses: Course[] = COURSES;
+  public search = '';
 
-  constructor() { }
+  showSearch() {
+    console.log(this.search);
+  }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

@@ -3,10 +3,10 @@
 <div class="search">
   <div class="container">
     <div class="container__search">
-      <input type="text" placeholder="Name, fragment or date" class="search__input" >
+      <input type="text" placeholder="Name, fragment or date" class="search__input" [(ngModel)]="search">
     </div>
     <div>
-      <input type="button" value="Search" class="search__button course__button"> <!--(click)="showInputMessage()"-->
+      <input type="button" value="Search" class="search__button course__button" (click)="showSearch()">
     </div>
   </div>
   <button class="add__container">
