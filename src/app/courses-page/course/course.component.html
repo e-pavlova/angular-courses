@@ -4,7 +4,7 @@
       <div class="course__info">
         <div class="course__info__title">
           <div>{{course.title | uppercase}}</div>
-          <div class="course__rating"><span class="fa fa-star"></span></div>
+          <div class="course__rating" *ngIf="course.topRated"><span class="fa fa-star"></span></div>
         </div>
         <div class="course__info__time">
           <div class="course__time">{{course.duration}}</div>

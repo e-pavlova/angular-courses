@@ -6,6 +6,7 @@ export class Course implements CourseItem {
               public title: string,
               public date: string,
               public duration: string,
-              public description: string) {
+              public description: string,
+              public topRated: boolean) {
   }
 }
