@@ -19,6 +19,10 @@ export class CoursesPageComponent implements OnInit {
     console.log('Load More');
   }
 
+  showDelete(id: number) {
+    console.log(id);
+  }
+
   constructor() {
   }
 

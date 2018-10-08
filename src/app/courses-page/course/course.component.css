@@ -12,6 +12,7 @@
 
 .course__data {
   margin-right: 3rem;
+  flex-grow: 1;
 }
 
 .course__info {

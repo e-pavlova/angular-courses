@@ -1,4 +1,4 @@
-import {CourseItem} from './course.interface';
+import { CourseItem } from './course.interface';
 
 export class Course implements CourseItem {
 

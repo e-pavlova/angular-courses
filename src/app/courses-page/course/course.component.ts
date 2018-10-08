@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {Course} from './course';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Course } from './course';
 
 @Component({
   selector: 'app-course',
@@ -9,6 +9,12 @@ import {Course} from './course';
 export class CourseComponent implements OnInit {
 
   @Input() public course: Course;
+  @Output() onDelete = new EventEmitter();
+
+  delete(e) {
+    this.onDelete.emit(this.course.id);
+  }
+
   constructor() {
   }
 
