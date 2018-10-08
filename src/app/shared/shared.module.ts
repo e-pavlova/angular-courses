@@ -4,9 +4,10 @@ import { DurationPipe } from './pipes/duration.pipe';
 
 @NgModule({
   imports: [
-    CommonModule,
-    DurationPipe
+    CommonModule
   ],
-  declarations: []
+  declarations: [
+    DurationPipe
+  ]
 })
 export class SharedModule { }
