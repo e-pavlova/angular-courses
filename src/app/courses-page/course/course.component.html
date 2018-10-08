@@ -7,8 +7,8 @@
           <div class="course__rating" *ngIf="course.topRated"><span class="fa fa-star"></span></div>
         </div>
         <div class="course__info__time">
-          <div class="course__time">{{course.duration}}</div>
-          <div class="course__date">{{course.date}}</div>
+          <div class="course__time">{{course.duration | duration}}</div>
+          <div class="course__date">{{course.date | date : 'shortDate'}}</div>
         </div>
       </div>
       <div class="course__about">{{course.description}}</div>
