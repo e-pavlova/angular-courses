@@ -1,11 +1,8 @@
 .course {
-  margin: 1rem;
-  border: 1px solid rgb(85, 107, 47);
-  border-radius: 3px;
 }
 
 .course__container {
-  padding: 1rem;
+  margin: 1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -18,12 +15,25 @@
 .course__info {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .course__info__title {
   margin-bottom: 1rem;
   padding-bottom: 0.3rem;
   padding-top: 0.3rem;
+  display: flex;
+}
+
+.course__rating {
+  color: rgb(255,215,0);
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+.course__rating__default {
+  font-size: 0.9rem;
+  margin-left: 1rem;
 }
 
 .course__info__time {
@@ -43,7 +53,7 @@
 }
 
 .course__about {
-
+  line-height: 2;
 }
 
 .course__buttons {

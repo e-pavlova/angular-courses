@@ -1,10 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DurationPipe } from './pipes/duration.pipe';
+import { SearchPipe } from './pipes/search.pipe';
+import { BorderDirective } from './directives/border.directive';
+import { OrderByPipe } from './pipes/orderBy.pipe';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: []
+  declarations: [
+    DurationPipe,
+    SearchPipe,
+    BorderDirective,
+    OrderByPipe
+  ],
+  exports: [
+    DurationPipe,
+    SearchPipe,
+    BorderDirective,
+    OrderByPipe
+  ]
 })
-export class SharedModule { }
+export class SharedModule {
+}

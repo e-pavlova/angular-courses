@@ -2,10 +2,13 @@
   <div class="course__container">
     <div class="course__data">
       <div class="course__info">
-        <div class="course__info__title">{{course.title}}</div>
+        <div class="course__info__title">
+          <div>{{course.title | uppercase}}</div>
+          <div class="course__rating__default" [ngClass]="{course__rating: course.topRated}"><span class="fa fa-star"></span></div>
+        </div>
         <div class="course__info__time">
-          <div class="course__time">{{course.duration}}</div>
-          <div class="course__date">{{course.date}}</div>
+          <div class="course__time">{{course.duration | duration}}</div>
+          <div class="course__date">{{course.date | date : 'shortDate'}}</div>
         </div>
       </div>
       <div class="course__about">{{course.description}}</div>
@@ -22,3 +25,4 @@
     </div>
   </div>
 </div>
+

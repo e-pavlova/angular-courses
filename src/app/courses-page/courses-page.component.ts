@@ -1,6 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, PipeTransform } from '@angular/core';
 import { COURSES } from './mock-courses';
 import { Course } from './course/course';
+import { DurationPipe } from '../shared/pipes/duration.pipe';
+import { SearchPipe } from '../shared/pipes/search.pipe';
 
 @Component({
   selector: 'app-courses-page',
@@ -10,22 +12,25 @@ import { Course } from './course/course';
 export class CoursesPageComponent implements OnInit {
   public courses: Course[] = COURSES;
   public search = '';
+  private searchPipe: SearchPipe;
 
-  showSearch() {
-    console.log(this.search);
+  constructor() {
+    this.searchPipe = new SearchPipe();
   }
 
-  showLoadMore() {
+  public ngOnInit() {
+  }
+
+  public showSearch() {
+    this.courses = this.searchPipe.transform(COURSES, this.search);
+  }
+
+  public showLoadMore() {
     console.log('Load More');
   }
 
-  showDelete(id: number) {
+  public showDelete(id: number) {
     console.log(id);
   }
 
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
 }
