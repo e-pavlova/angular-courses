@@ -4,9 +4,8 @@ import { Course } from '../../courses-page/course/course';
 @Pipe({
   name: 'search'
 })
-
 export class SearchPipe implements PipeTransform {
-  transform(courses: Course[], search): Course[] {
+  transform(courses: Course[], search: string): Course[] {
     if (search === undefined) {
       return courses;
     } else {

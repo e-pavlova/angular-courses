@@ -20,10 +20,10 @@
 <!--courses-page section-->
 
 <ng-container *ngIf="courses.length > 0">
-  <app-course style="display: block;" *ngFor="let course of courses | orderBy" [course]="course" [appBorder]="course.date" (onDelete)="showDelete($event)"></app-course>
+  <app-course class="app-course" *ngFor="let course of courses | orderBy" [course]="course" [appBorder]="course.date" (onDelete)="showDelete($event)"></app-course>
 </ng-container>
 
-<ng-container *ngIf="courses.length <= 0">
+<ng-container *ngIf="courses.length === 0">
   <div class="load__courses">
     <div class="load__button">NO DATA. FEEL FREE TO ADD NEW COURSE</div>
   </div>
@@ -31,7 +31,7 @@
 
 <!--load more section-->
 
-<ng-container *ngIf="courses.length > 0">
+<ng-container *ngIf="courses.length > 5">
   <div class="load__courses" (click)="showLoadMore()">
     <div class="load__button">LOAD MORE</div>
   </div>

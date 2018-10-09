@@ -1,5 +1,4 @@
 import {Directive, ElementRef, Input, OnInit} from '@angular/core';
-import {Course} from '../../courses-page/course/course';
 
 @Directive({
   selector: '[appBorder]'
@@ -8,10 +7,9 @@ import {Course} from '../../courses-page/course/course';
 export class BorderDirective implements OnInit {
   public twoWeeks = 12096e5;
 
-  @Input('appBorder') courseDate: Date;
+  @Input('appBorder') public courseDate: Date;
 
   constructor(private elementRef: ElementRef) {
-    // this.drawBorder(this.courseDate);
   }
 
   private drawBorder(courseDate: Date) {
