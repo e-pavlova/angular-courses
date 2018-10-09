@@ -5,7 +5,7 @@
 }
 
 .course__container {
-  padding: 1rem;
+  margin: 1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -26,17 +26,17 @@
   padding-bottom: 0.3rem;
   padding-top: 0.3rem;
   display: flex;
-  /*justify-content: space-between;*/
 }
 
 .course__rating {
   color: rgb(255,215,0);
   font-size: 0.9rem;
-  margin-left: 1rem;;
+  margin-left: 1rem;
 }
 
-.course__rating__hidden {
-  display: none;
+.course__rating__default {
+  font-size: 0.9rem;
+  margin-left: 1rem;
 }
 
 .course__info__time {
