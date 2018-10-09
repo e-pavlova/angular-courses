@@ -5,19 +5,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
-import { CourseItemComponent } from './course-item/course-item.component';
+import { CoursesPageComponent } from './courses-page/courses-page.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import { CoursesPageModule } from './courses-page/courses-page.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CourseItemComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     CoreModule,
-    SharedModule
+    SharedModule,
+    CoursesPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
