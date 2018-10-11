@@ -2,26 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
-import { CoursesPageComponent } from './courses-page/courses-page.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { CoursesPageModule } from './courses-page/courses-page.module';
-import { FormsModule } from '@angular/forms';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent} from './login/login.component';
+import { NoContentComponent } from './no-content/no-content.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    NoContentComponent
   ],
   imports: [
     BrowserModule,
     CoreModule,
     SharedModule,
-    CoursesPageModule
+    CoursesPageModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
