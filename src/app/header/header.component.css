@@ -13,9 +13,9 @@
 }
 
 .header__icon {
-  margin-right: 2rem;
-  font-size: 3rem;
-  color: rgb(85, 107, 47);
+  width: 4rem;
+  border-style: none;
+  margin-right: 0.5rem;
 }
 
 .header__title {
