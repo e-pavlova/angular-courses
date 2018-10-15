@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
 }
-.page-content {
+
+app-login {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   flex-grow: 1;
 }
