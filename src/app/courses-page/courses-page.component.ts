@@ -3,6 +3,7 @@ import {Course} from './course/course';
 import {DurationPipe} from '../shared/pipes/duration.pipe';
 import {SearchPipe} from '../shared/pipes/search.pipe';
 import {CourseService} from '../core/services/course.service';
+import {ConfirmationDialogService} from '../core/confirmation-dialog/confirmation-dialog.service';
 
 @Component({
   selector: 'app-courses-page',
@@ -15,7 +16,8 @@ export class CoursesPageComponent implements OnInit {
   private searchPipe: SearchPipe;
   private initCourses: Course[];
 
-  constructor(private courseService: CourseService) {
+  constructor(private courseService: CourseService,
+              private confirmationDialogService: ConfirmationDialogService) {
     this.searchPipe = new SearchPipe();
   }
 
@@ -33,9 +35,15 @@ export class CoursesPageComponent implements OnInit {
   }
 
   public showDelete(id: number) {
-    this.courseService.removeCourse(id);
-    this.initCourses = this.courseService.getList();
-    this.showSearch();
+    this.confirmationDialogService.confirm('Please confirm..', 'Do you really want to ... ?')
+      .then((confirmed) => {
+        if (confirmed) {
+          this.courseService.removeCourse(id);
+          this.initCourses = this.courseService.getList();
+          this.showSearch();
+        }
+      })
+      .catch(() => console.log('User dismissed the dialog (e.g., by using ESC, clicking the cross icon, or clicking outside the dialog)'));
   }
 
 }

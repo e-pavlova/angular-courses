@@ -9,14 +9,15 @@ import { LoginComponent} from './login/login.component';
 import { NoContentComponent } from './no-content/no-content.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EditAddCourseComponent } from './edit-add-course/edit-add-course.component';
+import {ConfirmationDialogComponent} from './core/confirmation-dialog/confirmation-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     NoContentComponent,
-    EditAddCourseComponent
-  ],
+    EditAddCourseComponent,
+],
   imports: [
     BrowserModule,
     CoreModule,
@@ -25,6 +26,7 @@ import { EditAddCourseComponent } from './edit-add-course/edit-add-course.compon
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ConfirmationDialogComponent]
 })
 export class AppModule { }
