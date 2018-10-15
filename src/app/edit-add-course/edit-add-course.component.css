@@ -30,6 +30,7 @@
   padding: 0.3rem 0.5rem;
   border: 1px solid rgb(180, 180, 180);
   margin-right: 2rem;
+  min-width: 5rem;
 }
 
 .add-edit-course__button__inner:hover {
