@@ -12,19 +12,19 @@ export class CourseService {
   constructor() {
   }
 
-  getList(): Course[] {
+  public getList(): Course[] {
     return courses;
   }
 
-  getItemByID(id: number): Course {
+  public getItemByID(id: number): Course {
     const item: Course = courses.find((course) => {
       return course.id === id;
     });
     return item;
   }
 
-  createCourse(title: string, date: Date, duration: number,
-               description?: string, topRated: boolean = false): number {
+  public createCourse(title: string, date: Date, duration: number,
+                      description?: string, topRated: boolean = false): number {
 
     const newCourse: Course = new Course(Date.now(), title, date.toUTCString(), duration, description, topRated);
 
@@ -33,14 +33,14 @@ export class CourseService {
     return newCourse.id;
   }
 
-  removeCourse(id: number): void {
+  public removeCourse(id: number): void {
     courses = courses.filter((course) => {
       return course.id !== id;
     });
   }
 
-  updateCourse(id: number, title?: string, date?: Date, duration?: number,
-               description?: string, topRated?: boolean): Course {
+  public updateCourse(id: number, title?: string, date?: Date, duration?: number,
+                      description?: string, topRated?: boolean): Course {
     const changedCourse: Course = courses.find((course) => {
       return course.id === id;
     });
