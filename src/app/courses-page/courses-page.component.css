@@ -4,12 +4,12 @@
   margin: 1rem;
 }
 
-.container {
+.search__container {
   display: flex;
   justify-content: space-between;
 }
 
-.container__search {
+.search__container__input {
   padding-right: 2rem;
 }
 
