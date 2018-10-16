@@ -35,7 +35,7 @@ export class CoursesPageComponent implements OnInit {
   }
 
   public showDelete(id: number) {
-    this.confirmationDialogService.confirm('Please confirm..', 'Do you really want to ... ?')
+    this.confirmationDialogService.confirm('', 'Do you really want to delete this course?')
       .then((confirmed) => {
         if (confirmed) {
           this.courseService.removeCourse(id);
