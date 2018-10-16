@@ -4,10 +4,14 @@ import { DurationPipe } from './pipes/duration.pipe';
 import { SearchPipe } from './pipes/search.pipe';
 import { BorderDirective } from './directives/border.directive';
 import { OrderByPipe } from './pipes/orderBy.pipe';
+import {RouterModule} from '@angular/router';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    FormsModule
   ],
   declarations: [
     DurationPipe,
@@ -19,7 +23,10 @@ import { OrderByPipe } from './pipes/orderBy.pipe';
     DurationPipe,
     SearchPipe,
     BorderDirective,
-    OrderByPipe
+    OrderByPipe,
+    RouterModule,
+    FormsModule,
+    CommonModule
   ]
 })
 export class SharedModule {

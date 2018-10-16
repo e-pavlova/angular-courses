@@ -1,8 +1,8 @@
 <!--search section-->
 
 <div class="search">
-  <div class="container">
-    <div class="container__search">
+  <div class="search__container">
+    <div class="search__container__input">
       <input type="text" placeholder="Name, fragment or date" class="search__input" [(ngModel)]="search">
     </div>
     <div>
@@ -20,7 +20,10 @@
 <!--courses-page section-->
 
 <ng-container *ngIf="courses.length > 0">
-  <app-course class="app-course" *ngFor="let course of courses | orderBy" [course]="course" [appBorder]="course.date" (onDelete)="showDelete($event)"></app-course>
+  <app-course class="app-course" *ngFor="let course of courses | orderBy"
+              [course]="course"
+              [appBorder]="course.date"
+              (onDelete)="showDelete($event)"></app-course>
 </ng-container>
 
 <ng-container *ngIf="courses.length === 0">
@@ -36,5 +39,3 @@
     <div class="load__button">LOAD MORE</div>
   </div>
 </ng-container>
-
-

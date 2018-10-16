@@ -1,0 +1,25 @@
+.modal-header {
+  background-color: rgb(143, 188, 143);
+  border-bottom: rgb(85, 107, 47);
+  min-height: 3rem;
+}
+
+.modal-footer__button {
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid rgb(180, 180, 180);
+  min-width: 5rem;
+  margin-right: 0.5rem;
+}
+
+.modal-footer__button:hover {
+  background-color: rgb(200, 200, 200);
+  color: rgb(85, 107, 47);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: flex-end;
+}

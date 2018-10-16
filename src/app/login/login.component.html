@@ -1,0 +1,31 @@
+<div class="login__container">
+  <div class="login">
+    <div class="login__title">
+      <div class="login__title__content">Login</div>
+    </div>
+    <div class="login__form">
+      <form (ngSubmit)="onSubmit()">
+        <div>
+          <div class="login__form__content">
+            <div class="login__form__content__title">Email: *Required</div>
+            <div>
+              <input required type="email" placeholder="Please enter email" name="login" class="login__form__content__input" [(ngModel)]="login">
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="login__form__content">
+            <div class="login__form__content__title">Password: *Required</div>
+            <div>
+              <input required type="password" placeholder="Please enter password" name="password" class="login__form__content__input" [(ngModel)]="password">
+            </div>
+          </div>
+        </div>
+        <div>
+          <button type="submit" class="login__form__button">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

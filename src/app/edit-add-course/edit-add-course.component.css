@@ -1,0 +1,40 @@
+.add-edit-course {
+  width: 1000px;
+  margin: 2rem auto 3rem auto;
+}
+
+.add-edit-course__input {
+  margin-bottom: 1rem;
+}
+
+.add-edit-course__input__title {
+}
+
+.add-edit-course__input__text {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+.add-edit-course__input__description__text {
+  padding-bottom: 4rem;
+}
+
+.add-edit-course__button {
+  margin-top: 3rem;
+}
+
+.add-edit-course__button__inner {
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid rgb(180, 180, 180);
+  margin-right: 2rem;
+  min-width: 5rem;
+}
+
+.add-edit-course__button__inner:hover {
+  background-color: rgb(200, 200, 200);
+  color: rgb(85, 107, 47);
+}
+
