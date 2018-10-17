@@ -5,10 +5,10 @@ import {Course} from '../courses-page/course/course';
 
 @Component({
   selector: 'app-edit-add-course',
-  templateUrl: './edit-add-course.component.html',
-  styleUrls: ['./edit-add-course.component.css']
+  templateUrl: './edit-course.component.html',
+  styleUrls: ['./edit-course.component.css']
 })
-export class EditAddCourseComponent implements OnInit {
+export class EditCourseComponent implements OnInit {
 
   public title: string;
   public description: string;

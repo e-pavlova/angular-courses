@@ -8,16 +8,17 @@ import { CoursesPageModule } from './courses-page/courses-page.module';
 import { LoginComponent} from './login/login.component';
 import { NoContentComponent } from './no-content/no-content.component';
 import { AppRoutingModule } from './app-routing.module';
-import { EditAddCourseComponent } from './edit-add-course/edit-add-course.component';
+import { EditCourseComponent } from './edit-course/edit-course.component';
 import {ConfirmationDialogComponent} from './core/confirmation-dialog/confirmation-dialog.component';
-import {RouterModule} from '@angular/router';
+import { AddCourseComponent } from './add-course/add-course.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     NoContentComponent,
-    EditAddCourseComponent,
+    EditCourseComponent,
+    AddCourseComponent,
 ],
   imports: [
     BrowserModule,
