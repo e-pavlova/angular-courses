@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'courses', component: CoursesPageComponent },
   // { path: 'courses/:id', component: CourseComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'course/edit', component: EditAddCourseComponent },
+  { path: 'course/:id/edit', component: EditAddCourseComponent },
   { path: '**', component: NoContentComponent }
 ];
 

@@ -4,6 +4,7 @@ import {DurationPipe} from '../shared/pipes/duration.pipe';
 import {SearchPipe} from '../shared/pipes/search.pipe';
 import {CourseService} from '../core/services/course.service';
 import {ConfirmationDialogService} from '../core/confirmation-dialog/confirmation-dialog.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-courses-page',
@@ -17,7 +18,8 @@ export class CoursesPageComponent implements OnInit {
   private initCourses: Course[];
 
   constructor(private courseService: CourseService,
-              private confirmationDialogService: ConfirmationDialogService) {
+              private confirmationDialogService: ConfirmationDialogService,
+              private router: Router) {
     this.searchPipe = new SearchPipe();
   }
 
@@ -43,7 +45,8 @@ export class CoursesPageComponent implements OnInit {
           this.showSearch();
         }
       })
-      .catch(() => console.log('User dismissed the dialog (e.g., by using ESC, clicking the cross icon, or clicking outside the dialog)'));
+      .catch(() => console.log('User dismissed the dialog' +
+        '(e.g., by using ESC, clicking the cross icon, or clicking outside the dialog)'));
   }
 
 }

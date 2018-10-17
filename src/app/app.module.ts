@@ -10,6 +10,7 @@ import { NoContentComponent } from './no-content/no-content.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EditAddCourseComponent } from './edit-add-course/edit-add-course.component';
 import {ConfirmationDialogComponent} from './core/confirmation-dialog/confirmation-dialog.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,6 @@ import {ConfirmationDialogComponent} from './core/confirmation-dialog/confirmati
     CoursesPageModule,
     AppRoutingModule
   ],
-  providers: [],
   bootstrap: [AppComponent],
   entryComponents: [ConfirmationDialogComponent]
 })

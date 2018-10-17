@@ -14,7 +14,7 @@
       <div class="course__about">{{course.description}}</div>
     </div>
     <div class="course__buttons">
-      <button class="button__edit course__button">
+      <button class="button__edit course__button" [routerLink]="['/course', course.id, 'edit']">
         <i class="fas fa-fw fa-edit icons"></i>
         <span class="edit__icon__tile">Edit</span>
       </button>
