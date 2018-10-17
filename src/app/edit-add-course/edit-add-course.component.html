@@ -3,32 +3,35 @@
     <div class="add-edit-course__input">
       <div class="add-edit-course__input__title">Title: *Required</div>
       <div>
-        <input type="text" placeholder="Text input" required class="add-edit-course__input__text">
+        <input type="text" placeholder="Text input" required class="add-edit-course__input__text" [(ngModel)]="title" name="title">
       </div>
     </div>
     <div class="add-edit-course__input">
       <div class="add-edit-course__input__title">Description: *Required</div>
       <div>
-        <input type="text" placeholder="Text area" required class="add-edit-course__input__text
-        add-edit-course__input__description__text">
+        <textarea placeholder="Text area" required class="add-edit-course__input__text
+        add-edit-course__input__description__text" [(ngModel)]="description" name="description"></textarea>
       </div>
     </div>
     <div class="add-edit-course__input">
       <div class="add-edit-course__input__title">Date: *Required</div>
       <div>
-        <input type="text" placeholder="MM.DD.YYYY" required class="add-edit-course__input__text">
+        <input type="text" placeholder="MM.DD.YYYY" required class="add-edit-course__input__text" [(ngModel)]="date"
+               name="date">
       </div>
     </div>
     <div class="add-edit-course__input">
       <div class="add-edit-course__input__title">Duration: *Required</div>
       <div>
-        <input type="text" placeholder="Input in minutes" required class="add-edit-course__input__text">
+        <input type="text" placeholder="Input in minutes" required class="add-edit-course__input__text"
+               [(ngModel)]="duration" name="duration">
       </div>
     </div>
     <div class="add-edit-course__input">
       <div class="add-edit-course__input__title">Authors: *Required</div>
       <div>
-        <input type="text" placeholder="Start typing..." required class="add-edit-course__input__text">
+        <input type="text" placeholder="Start typing..." required class="add-edit-course__input__text"
+               [(ngModel)]="authors" name="authors">
       </div>
     </div>
     <div class="add-edit-course__button">

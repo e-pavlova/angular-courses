@@ -18,7 +18,7 @@
 }
 
 .add-edit-course__input__description__text {
-  padding-bottom: 4rem;
+  min-height: 6rem;
 }
 
 .add-edit-course__button {
