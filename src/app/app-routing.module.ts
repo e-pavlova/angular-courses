@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import {NoContentComponent} from './no-content/no-content.component';
 import {CourseComponent} from './courses-page/course/course.component';
 import {EditCourseComponent} from './edit-course/edit-course.component';
+import {AddCourseComponent} from './add-course/add-course.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/courses', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   // { path: 'courses/:id', component: CourseComponent },
   { path: 'login', component: LoginComponent },
   { path: 'course/:id/edit', component: EditCourseComponent },
+  { path: 'course/add', component: AddCourseComponent },
   { path: '**', component: NoContentComponent }
 ];
 
