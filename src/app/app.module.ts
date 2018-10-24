@@ -9,8 +9,9 @@ import { LoginComponent} from './login/login.component';
 import { NoContentComponent } from './no-content/no-content.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EditCourseComponent } from './edit-course/edit-course.component';
-import {ConfirmationDialogComponent} from './core/confirmation-dialog/confirmation-dialog.component';
+import { ConfirmationDialogComponent } from './core/confirmation-dialog/confirmation-dialog.component';
 import { AddCourseComponent } from './add-course/add-course.component';
+import { FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AddCourseComponent } from './add-course/add-course.component';
     CoreModule,
     SharedModule,
     CoursesPageModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   bootstrap: [AppComponent],
   entryComponents: [ConfirmationDialogComponent]

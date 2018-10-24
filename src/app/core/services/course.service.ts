@@ -23,10 +23,10 @@ export class CourseService {
     return item;
   }
 
-  public createCourse(title: string, date: Date, duration: number,
+  public createCourse(title: string, date: string, duration: number,
                       description?: string, topRated: boolean = false): number {
 
-    const newCourse: Course = new Course(Date.now(), title, date.toUTCString(), duration, description, topRated);
+    const newCourse: Course = new Course(Date.now(), title, date, duration, description, topRated);
 
     courses.push(newCourse);
 
