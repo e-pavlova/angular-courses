@@ -3,26 +3,30 @@
     <div class="add-course__input">
       <div class="add-course__input__title">Title: *Required</div>
       <div>
-        <input type="text" placeholder="Text input" required class="add-course__input__text" [(ngModel)]="title" name="title">
+        <input type="text" placeholder="Text input" required class="add-course__input__text"
+               [(ngModel)]="title" name="title">
       </div>
     </div>
     <div class="add-course__input">
       <div class="add-course__input__title">Description: *Required</div>
       <div>
         <textarea placeholder="Text area" required class="add-course__input__text
-        add-course__input__description__text" [(ngModel)]="description" name="description"></textarea>
+        add-course__input__description__text"
+                  [(ngModel)]="description" name="description"></textarea>
       </div>
     </div>
     <div class="add-course__input">
       <div class="add-course__input__title">Date: *Required</div>
       <div>
-        <input type="text" placeholder="MM.DD.YYYY" required class="add-course__input__text" [(ngModel)]="date" name="date">
+        <input type="text" placeholder="MM.DD.YYYY" required class="add-course__input__text"
+               [(ngModel)]="date" name="date">
       </div>
     </div>
     <div class="add-course__input">
       <div class="add-course__input__title">Duration: *Required</div>
       <div>
-        <input type="text" placeholder="Input in minutes" required class="add-course__input__text" [(ngModel)]="duration" name="duration">
+        <input type="text" placeholder="Input in minutes" required class="add-course__input__text"
+               [(ngModel)]="duration" name="duration">
       </div>
     </div>
     <div class="add-course__input">
@@ -34,7 +38,7 @@
     <div class="add-course__button">
       <div>
         <button type="submit" class="add-course__button__inner">Save</button>
-        <button type="button" class="add-course__button__inner">Cancel</button>
+        <button type="button" class="add-course__button__inner" [routerLink]="'/courses'">Cancel</button>
       </div>
     </div>
   </form>
