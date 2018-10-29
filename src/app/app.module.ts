@@ -8,24 +8,27 @@ import { CoursesPageModule } from './courses-page/courses-page.module';
 import { LoginComponent} from './login/login.component';
 import { NoContentComponent } from './no-content/no-content.component';
 import { AppRoutingModule } from './app-routing.module';
-import { EditAddCourseComponent } from './edit-add-course/edit-add-course.component';
-import {ConfirmationDialogComponent} from './core/confirmation-dialog/confirmation-dialog.component';
+import { EditCourseComponent } from './edit-course/edit-course.component';
+import { ConfirmationDialogComponent } from './core/confirmation-dialog/confirmation-dialog.component';
+import { AddCourseComponent } from './add-course/add-course.component';
+import { FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     NoContentComponent,
-    EditAddCourseComponent,
+    EditCourseComponent,
+    AddCourseComponent,
 ],
   imports: [
     BrowserModule,
     CoreModule,
     SharedModule,
     CoursesPageModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
   bootstrap: [AppComponent],
   entryComponents: [ConfirmationDialogComponent]
 })

@@ -1,9 +1,13 @@
 <div class="header">
   <div class="header__container">
     <div>
-      <img src="assets/images/angular-hat.png" alt="Angular icon" class="header__icon"/>
+      <a [routerLink]="['/courses']">
+        <img src="assets/images/angular-hat.png" alt="Angular icon" class="header__icon"/>
+      </a>
     </div>
-    <div class="header__title">Angular Courses</div>
+    <a [routerLink]="['/courses']" class="header__title">
+      <div>Angular Courses</div>
+    </a>
   </div>
   <div class="header__container" *ngIf="!isLoginPage">
     <div class="header__user">User Name</div>

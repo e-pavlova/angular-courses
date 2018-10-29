@@ -7,7 +7,7 @@ export const COURSES: Course[] = [
     description: 'How to build your first Hello World Angular application', topRated: true
   },
   {
-    id: 2, title: 'Components', date: '11/20/2018', duration: 104,
+    id: 2, title: 'Components', date: '11/20/2019', duration: 104,
     description: 'On this training, we will take a look at custom components in Angular 2, ' +
       'what they are, how to build components in Angular 2 application and pass data between them', topRated: false
   },
@@ -24,7 +24,7 @@ export const COURSES: Course[] = [
       'Participants will know about built-in directives and how to write custom directives', topRated: false
   },
   {
-    id: 5, title: 'Modules, Services and DI', date: '10/08/2018', duration: 56,
+    id: 5, title: 'Modules, Services and DI', date: '10/23/2018', duration: 56,
     description: 'Multiple components have to use the same functionality over and over again. ' +
       'To not copy and paste same code each time we need to use some other way. ' +
       'So let\'s figure out how services can be used for this purpose', topRated: true

@@ -4,7 +4,9 @@
       <div class="course__info">
         <div class="course__info__title">
           <div>{{course.title | uppercase}}</div>
-          <div class="course__rating__default" [ngClass]="{course__rating: course.topRated}"><span class="fa fa-star"></span></div>
+          <div class="course__rating__default" [ngClass]="{course__rating: course.topRated}">
+            <span class="fa fa-star"></span>
+          </div>
         </div>
         <div class="course__info__time">
           <div class="course__time">{{course.duration | duration}}</div>
@@ -14,7 +16,7 @@
       <div class="course__about">{{course.description}}</div>
     </div>
     <div class="course__buttons">
-      <button class="button__edit course__button">
+      <button class="button__edit course__button" [routerLink]="['/course', course.id, 'edit']">
         <i class="fas fa-fw fa-edit icons"></i>
         <span class="edit__icon__tile">Edit</span>
       </button>
