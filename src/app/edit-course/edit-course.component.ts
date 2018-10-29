@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, ActivatedRouteSnapshot} from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
 import {CourseService} from '../core/services/course.service';
 import {Course} from '../courses-page/course/course';
 
@@ -20,6 +20,11 @@ export class EditCourseComponent implements OnInit {
               private courseService: CourseService) {
   }
 
+  public update(): void {
+    const id: string = this.route.snapshot.params.id;
+    this.courseService.updateCourse(parseInt(id, 10), this.title, this.date, this.duration, this.description);
+  }
+
   ngOnInit() {
     const id: string = this.route.snapshot.params.id;
     const currCourse: Course = this.courseService.getItemByID(parseInt(id, 10));
@@ -29,5 +34,4 @@ export class EditCourseComponent implements OnInit {
     this.date = currCourse.date;
     this.duration = currCourse.duration;
   }
-
 }

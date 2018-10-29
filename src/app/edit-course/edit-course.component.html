@@ -1,5 +1,5 @@
 <div class="edit-course">
-  <form>
+  <form (ngSubmit)="update()">
     <div class="edit-course__input">
       <div class="edit-course__input__title">Title: *Required</div>
       <div>
@@ -37,7 +37,7 @@
     <div class="edit-course__button">
       <div>
         <button type="submit" class="edit-course__button__inner">Save</button>
-        <button type="button" class="edit-course__button__inner">Cancel</button>
+        <button type="button" class="edit-course__button__inner" [routerLink]="'/courses'">Cancel</button>
       </div>
     </div>
   </form>
