@@ -20,7 +20,7 @@ export class AuthService {
     localStorage.removeItem('currentUser');
   }
 
-  public iAuthenticated(): boolean {
+  public isAuthenticated(): boolean {
     if (localStorage.getItem('currentUser')) {
       return true;
     }
