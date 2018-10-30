@@ -11,7 +11,9 @@ export class AuthService {
 
   public logIn(email: string, password: string): void {
     const loginObj = JSON.stringify({'email': email});
-    localStorage.setItem('currentUser', loginObj);
+    if (email !== '' && password !== '') {
+      localStorage.setItem('currentUser', loginObj);
+    }
   }
 
   public logOut(): void {
