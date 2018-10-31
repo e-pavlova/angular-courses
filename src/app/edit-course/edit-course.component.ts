@@ -12,7 +12,7 @@ export class EditCourseComponent implements OnInit {
 
   public title: string;
   public description: string;
-  public date: Date;
+  public date: string;
   public duration: number;
   public authors = '';
 
@@ -23,7 +23,7 @@ export class EditCourseComponent implements OnInit {
 
   public update(): void {
     const id: string = this.route.snapshot.params.id;
-    this.courseService.updateCourse(parseInt(id, 10), this.title, this.date, this.duration, this.description);
+    this.courseService.updateCourse(parseInt(id, 10), this.title, new Date(this.date), this.duration, this.description);
     this.router.navigate(['/courses']);
   }
 
@@ -33,7 +33,7 @@ export class EditCourseComponent implements OnInit {
 
     this.title = currCourse.title;
     this.description = currCourse.description;
-    this.date = currCourse.date;
+    this.date = currCourse.date.toUTCString();
     this.duration = currCourse.duration;
   }
 }
