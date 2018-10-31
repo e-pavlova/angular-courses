@@ -7,22 +7,36 @@ import { NoContentComponent } from './no-content/no-content.component';
 import { CourseComponent } from './courses-page/course/course.component';
 import { EditCourseComponent } from './edit-course/edit-course.component';
 import { AddCourseComponent } from './add-course/add-course.component';
-import {AuthGuard} from './core/guards/authGuard';
+import { AuthGuard } from './core/guards/authGuard';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/courses', canActivate: [AuthGuard], pathMatch: 'full' },
-  { path: 'courses', component: CoursesPageComponent, canActivate: [AuthGuard] },
+  {path: '', redirectTo: '/courses', canActivate: [AuthGuard], pathMatch: 'full'},
+  {
+    path: 'courses', canActivate: [AuthGuard], children: [
+      {
+        path: '',
+        component: CoursesPageComponent
+      },
+      {path: 'add', component: AddCourseComponent},
+      {
+        path: ':id/edit',
+        component: EditCourseComponent,
+        data: {
+          breadcrumb: 'Video Course',
+          showParamId: true
+        }
+      }]
+  },
   // { path: 'courses/:id', component: CourseComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'course/:id/edit', component: EditCourseComponent, canActivate: [AuthGuard] },
-  { path: 'course/add', component: AddCourseComponent, canActivate: [AuthGuard] },
-  { path: '**', component: NoContentComponent, canActivate: [AuthGuard] }
+  {path: 'login', component: LoginComponent},
+  {path: '**', component: NoContentComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(routes)
   ],
-  exports: [ RouterModule ]
+  exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

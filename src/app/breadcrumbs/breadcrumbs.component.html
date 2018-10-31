@@ -1,3 +1,5 @@
-<div class="breadcrumbs">
-  <a ng-reflect-router-link="/courses" href="/courses" class="breadcrumbs__link">Courses</a>
-</div>
+<ol class="breadcrumb">
+  <li *ngFor="let breadcrumb of breadcrumbs" class="breadcrumb__link">
+    <a [routerLink]="[breadcrumb.url]" class="breadcrumb__link">{{breadcrumb.label}}</a>
+  </li>
+</ol>

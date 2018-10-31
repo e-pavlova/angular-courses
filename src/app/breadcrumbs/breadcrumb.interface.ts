@@ -1,6 +1,6 @@
 import { Params } from '@angular/router';
 
-export interface BreadcrumbsInterface {
+export interface Breadcrumb {
   label: string;
   url: string;
   params: Params;
