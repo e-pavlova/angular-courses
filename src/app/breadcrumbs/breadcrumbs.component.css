@@ -1,13 +1,23 @@
-.breadcrumbs {
+.breadcrumb {
   padding: 1rem;
-  border-bottom: 1px solid rgb(85, 107, 47);
+  border-bottom: 1px solid rgb(180, 180, 180);
+  border-left: 1px solid rgb(180, 180, 180);
+  border-right: 1px solid rgb(180, 180, 180);
+  border-radius: unset;
+  background-color: rgb(233, 236, 239);
 }
 
-.breadcrumbs__link {
+.breadcrumb__link {
   text-decoration: none;
   color: black;
+  padding-right: 1rem;
 }
 
-.breadcrumbs__link:hover {
+.breadcrumb__link:hover {
   color: rgb(85, 107, 47);
+}
+
+.breadcrumb__courses {
+  text-decoration: none;
+  color: black;
 }

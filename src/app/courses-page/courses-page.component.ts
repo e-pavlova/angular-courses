@@ -1,6 +1,5 @@
-import {Component, OnInit, Input, PipeTransform} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Course} from './course/course';
-import {DurationPipe} from '../shared/pipes/duration.pipe';
 import {SearchPipe} from '../shared/pipes/search.pipe';
 import {CourseService} from '../core/services/course.service';
 import {ConfirmationDialogService} from '../core/confirmation-dialog/confirmation-dialog.service';

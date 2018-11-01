@@ -1,3 +1,18 @@
-<div class="breadcrumbs">
-  <a ng-reflect-router-link="/courses" href="/courses" class="breadcrumbs__link">Courses</a>
-</div>
+<ol class="breadcrumb" *ngIf="this.router.url !== '/courses'">
+  <li *ngFor="let breadcrumb of breadcrumbs">
+    <span *ngIf="this.router.url === breadcrumb.url">
+      <span>{{breadcrumb.label}}</span>
+    </span>
+    <span *ngIf="this.router.url !== breadcrumb.url">
+      <a [routerLink]="[breadcrumb.url]" class="breadcrumb__link">{{breadcrumb.label}}</a>
+    </span>
+  </li>
+</ol>
+
+<!--Courses page-->
+
+<ol class="breadcrumb" *ngIf="this.router.url === '/courses'">
+  <li>
+    <a class="breadcrumb__courses">courses</a>
+  </li>
+</ol>
