@@ -10,8 +10,14 @@
 .breadcrumb__link {
   text-decoration: none;
   color: black;
+  padding-right: 1rem;
 }
 
 .breadcrumb__link:hover {
   color: rgb(85, 107, 47);
+}
+
+.breadcrumb__courses {
+  text-decoration: none;
+  color: black;
 }

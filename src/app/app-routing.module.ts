@@ -22,7 +22,7 @@ const routes: Routes = [
         path: ':id/edit',
         component: EditCourseComponent,
         data: {
-          breadcrumb: 'Video Course',
+          breadcrumb: 'video course',
           showParamId: true
         }
       }]

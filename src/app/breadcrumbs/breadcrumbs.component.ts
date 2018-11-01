@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {ActivatedRoute, NavigationEnd, PRIMARY_OUTLET, Router} from '@angular/router';
+import {ActivatedRoute, NavigationEnd, PRIMARY_OUTLET, Route, Router} from '@angular/router';
 import {Breadcrumb} from './breadcrumb.interface';
 import {Observable} from 'rxjs';
 import {distinctUntilChanged, filter, map} from 'rxjs/operators';
@@ -13,10 +13,8 @@ export class BreadcrumbsComponent implements OnInit {
 
   public breadcrumbs: Breadcrumb[];
 
-  constructor(
-    private activatedRoute: ActivatedRoute,
-    private router: Router
-  ) {
+  constructor(private activatedRoute: ActivatedRoute,
+              public router: Router) {
     this.breadcrumbs = [];
   }
 
